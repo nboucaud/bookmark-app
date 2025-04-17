@@ -5,10 +5,10 @@
         {% set preview_class_modifier = entry.previewPicture ? '' : ' preview--default' %}
         {% if is_granted('VIEW', entry) %}
             <a href="{{ path('view', {'id': entry.id}) }}">
-                <span class="preview{{ preview_class_modifier }}" style="background-image: url({{ entry.previewPicture|default(asset('img/logo-square.svg')) }})"></span>
+                <span class="preview{{ preview_class_modifier }}" style="background-image: url({{ entry.previewPicture|default(asset('img/logo-square.png')) }})"></span>
             </a>
         {% else %}
-            <span class="preview{{ preview_class_modifier }}" style="background-image: url({{ entry.previewPicture|default(asset('img/logo-square.svg')) }})"></span>
+            <span class="preview{{ preview_class_modifier }}" style="background-image: url({{ entry.previewPicture|default(asset('img/logo-square.png')) }})"></span>
         {% endif %}
     </div>
     {% endif %}

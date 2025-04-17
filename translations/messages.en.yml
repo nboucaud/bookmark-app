@@ -24,7 +24,7 @@ menu:
         tags: Tags
         internal_settings: Internal Settings
         import: Import
-        howto: Howto
+        howto: Shortcuts
         developer: API clients management
         logout: Logout
         about: About
@@ -100,7 +100,7 @@ config:
         lineheight_label: Line height
         maxwidth_label: Maximal width
     form_feed:
-        description: 'Atom feeds provided by wallabag allow you to read your saved articles with your favourite Atom reader. You need to generate a token first.'
+        description: 'Atom feeds allow you to read your saved articles with your favourite Atom reader. You need to generate a token first.'
         token_label: 'Feed token'
         no_token: 'No token'
         token_create: 'Create your token'
@@ -166,7 +166,7 @@ config:
         faq:
             title: FAQ
             tagging_rules_definition_title: What does “tagging rules” mean?
-            tagging_rules_definition_description: They are rules used by wallabag to automatically tag new entries.<br />Each time a new entry is added, all the tagging rules will be used to add the tags you configured, thus saving you the trouble of manually classifying your entries.
+            tagging_rules_definition_description: They are rules to automatically tag new entries.<br />Each time a new entry is added, all the tagging rules will be used to add the tags you configured, thus saving you the trouble of manually classifying your entries.
             how_to_use_them_title: How do I use them?
             how_to_use_them_description: 'Let us assume you want to tag new entries as « <i>short reading</i> » when the reading time is under 3 minutes.<br />In that case, you should put « readingTime &lt;= 3 » in the <i>Rule</i> field and « <i>short reading</i> » in the <i>Tags</i> field.<br />Several tags can added simultaneously by separating them with a comma: « <i>short reading, must read</i> »<br />Complex rules can be written by using predefined operators: if « <i>readingTime &gt;= 5 AND domainName = "www.php.net"</i> » then tag as « <i>long reading, php</i> »'
             variables_available_title: Which variables and operators can I use to write rules?
@@ -199,7 +199,7 @@ config:
         faq:
             title: 'FAQ'
             ignore_origin_rules_definition_title: 'What does “ignore origin rules” mean?'
-            ignore_origin_rules_definition_description: 'They are used by wallabag to automatically ignore an origin address after a redirect.<br />If a redirect occurs while fetching a new entry, all the ignore origin rules (<i>user defined and instance defined</i>) will be used to ignore the origin address.'
+            ignore_origin_rules_definition_description: 'They are used to automatically ignore an origin address after a redirect.<br />If a redirect occurs while fetching a new entry, all the ignore origin rules (<i>user defined and instance defined</i>) will be used to ignore the origin address.'
             how_to_use_them_title: 'How do I use them?'
             how_to_use_them_description: 'Let us assume you want to ignore the origin of an entry coming from « <i>rss.example.com</i> » (<i>knowing that after a redirect, the actual address is example.com</i>).<br />In that case, you should put « host = "rss.example.com" » in the <i>Rule</i> field.'
             variables_available_title: 'Which variables and operators can I use to write rules?'
@@ -367,7 +367,7 @@ about:
         package: Package
         license: License
 howto:
-    page_title: Howto
+    page_title: Shortcuts
     tab_menu:
         add_link: Add a link
         shortcuts: Use shortcuts

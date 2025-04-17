@@ -295,9 +295,9 @@ class EntryController extends AbstractController
     public function showUnreadAction(Request $request, $page)
     {
         // load the quickstart if no entry in database
-        if (1 === (int) $page && 0 === $this->entryRepository->countAllEntriesByUser($this->getUser()->getId())) {
-            return $this->redirect($this->generateUrl('quickstart'));
-        }
+        // if (1 === (int) $page && 0 === $this->entryRepository->countAllEntriesByUser($this->getUser()->getId())) {
+        //     return $this->redirect($this->generateUrl('quickstart'));
+        // }
 
         return $this->showEntries('unread', $request, $page);
     }
